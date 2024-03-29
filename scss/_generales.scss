@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Reenie+Beanie&display=swap');
+  * {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x:  hidden;
+    height: auto;
+    font-family: "Courier Prime", monospace;
+    }
+  
+
+     /*header las pages*/
+       header { 
+        height: 200px;
+        padding: 10px;
+        overflow: hidden;
+        text-align: center;
+        background-color:$primario;
+       
+        header img{ 
+          height: 200px;
+         }
+       }
+       body{
+        font-family: "Courier Prime", monospace;
+        background-color:rgba(236, 213, 173, 0.218);
+        width: 100%;
+        max-height: auto;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+     
+        footer {
+          display: flex;
+          justify-content: space-between; 
+          align-items: center; 
+          background-color:$primario;
+          padding: 20px;
+       
+        .logo-footer {
+          display: flex; 
+          align-items: center; 
+          img {
+            max-width: 100px;
+            margin-right: 10px; 
+          }
+        }
+        .container-redes {
+          display: flex; 
+          align-items: center; 
+          .icono-redes {
+             gap: 35px;
+             padding: 15px;
+             transition: transform 0.3s ease-in-out; 
+             i {
+              font-size: 60px;
+              &:hover{
+                transform: scale(1.2); 
+              } 
+              } 
+          }
+        
+          h4{
+          margin-top: 20px;
+          }
+        }
+      }
+  
+      
