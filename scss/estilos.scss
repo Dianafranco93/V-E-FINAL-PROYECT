@@ -1,138 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    max-width: 100%;
-    overflow-x: hidden;
-    font-family:"Dosis", sans-serif;
-  }
-  
-  /*header las pages*/
-  header {
-    width: 100%;
-    height: 180px;
-    padding: 10px;
-    overflow: hidden;
-    background-color: #bd9052;
-    display: flex;
-    align-items: center;
-    align-content: space-between
-  }
-  .logo-velas {
-  width: 110px;
-  height: 110px;
-  margin-right: 100px;
-  margin-left: 70px;
-  }
- 
-  
-  /* body de las pages*/
-  body {
-    font-family:"Dosis", sans-serif;
-    background-color: rgba(28, 30, 27, 0.1);
-    width: 100%;
-    min-height: auto;
-    margin: 0;
-    padding: 0;
-    max-width: 0 auto;
-  }
+@import'generales';
+@import'variables';
 
-  footer{
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    padding: 2rem 8%;
-    background-color: #bd9052;
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    align-items: center;
-  }
- 
-  .contenedor-redes .menu-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin:20px;
-  }
-  .iconos-redes i{
-   display: flex;
-   align-items: center;
-   align-content: center;
-   height: 30px;
-   width: 30px;
-   margin-left: 8%;
-   margin-top: 10px;
-   margin-bottom: 10px;
-   color: #423f16;
-   text-decoration: none;
-  }
-  .menu-footer{
-    display: flex;
-   align-items: center;
-   align-content: center;
-   list-style-type: none;
-   color: #3b380f;
-   font-size: 15px;
-  }
-  .menu-item{
-  margin: 1rem 1.5rem;
-  cursor:all-scroll;
-  opacity: 0.7;
-  }
-  .menu-item:hover{
-    opacity: 1.3;
-    color: #3b380fe1;
-  }
-  .copyright{
-    display: flex;
-   align-items: center;
-   align-content: center;
-   text-align: center;
-   opacity: 0.5;
-   color: #3b380f;
-   margin-top:10px;
-  }
-  .logo{
-  width: 150px;
-  height: 180px;
-  }
-  .menu-item a{
-    font-size: 15px;
-    color:#7f551b;
-    text-decoration: none;
-  }
 
   /*titulo principal*/
   h1 {
     text-align: center;
-    color: #3b380f;
+    color:$secundario;
     font-size: 25px;
-    font-size: medium;
   }
   
   /*codigo del buscador */
   .d-flex button {
     width: 100px;
-    background-color: #bd9052;
+    background-color: $primario;
+    &:hover {
+      width: 100px;
+      background-color: rgba(59, 56, 15, 0.5725490196);
+    }
   }
-  
-  .d-flex button:hover {
-    width: 100px;
-    background-color: rgba(59, 56, 15, 0.5725490196);
-  }
-  
+   /* estilos buscador*/
+     /* estilos carrito*/
   .icono-contador-carrito {
     display: flex;
     flex-direction: row-reverse;
     margin-right: 8px;
     margin-top: 15px;
-  }
-  
-  /* estilos buscador*/
-  /* estilos carrito*/
+
   .container-cart-products-hidden-cart {
     position: absolute;
     top: calc(25% + 5px);
@@ -143,16 +36,21 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 10;
     display: none;
+    .cart-producto {
+      display: flex;
+    }
+    .info-cart-producto {
+      display: flex;
+      padding: 10px;
+    }
   }
-  
-  .icon-cart:hover ~ .container-cart-products-hidden-cart {
-    display: block;
-  }
-  
   .icon-cart {
     width: 40px;
     height: 40px;
-    stroke: #3b380f;
+    stroke:$secundario; 
+    &:hover .container-cart-products-hidden-cart {
+    display: block;
+  }
   }
   
   .count-productos {
@@ -173,20 +71,10 @@
     position: absolute;
     top: 20px;
     right: 12px;
-    background-color: #bd9052;
+    background-color:$primario;
     width: 400px;
     z-index: 1;
   }
-  
-  .cart-producto {
-    display: flex;
-  }
-  
-  .info-cart-producto {
-    display: flex;
-    padding: 10px;
-  }
-  
   .icon-closse {
     width: 25px;
     height: 25px;
@@ -195,18 +83,19 @@
     margin-left: 45px;
     background-color: rgba(59, 56, 15, 0.7882352941);
   }
+}
   
   /*fin  estilos carrito*/
   /*codigo del subtitulo */
   h2 {
     padding: 30px;
-    color: #3b380f;
+    color:$secundario;
     text-align: center;
   }
   
   .destacados h3 {
     text-align: center;
-    color: #3b380f;
+    color:$secundario;
     padding: 40px;
     margin: 0 auto;
   }
@@ -214,7 +103,7 @@
   /* parrafo index*/
   .informacion p {
     padding: 30px;
-    color: #3b380f;
+    color:$secundario;
     background-color: rgba(213, 159, 92, 0.3215686275);
     margin: 20px;
     text-align: justify;
@@ -228,23 +117,66 @@
     text-align: center;
     font-size: 200%;
   }
+   /* inicio carousel*/
+   #carouselConteiner{
+    width:$ancho;
+    height:$alto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 40px;
+
+  #carouselExample {
+    width: $ancho;
+    margin: 0 auto;
+    padding: 5px;
+    height:$alto;
+  }
+  
+  .carousel-item{
+   img {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 30px;
+    height: 600px;
+  }
+  h6 {
+    color: #191809;
+    font-size: 25px;
+    font-family: cursive;
+  }
+
+  p {
+    color: #191809;
+    font-size: 25px;
+    font-family:$type;
+  }
+  
+}
+  .carousel-control-prev-icon {
+    background-color: rgba(59, 56, 15, 0.7058823529);
+  }
+  
+  .carousel-control-next-icon {
+    background-color: rgba(59, 56, 15, 0.7058823529);
+  }
+}
+  /* fin carousel*/
   
   /* aqui inicianlas cards*/
   .contenedor-cards{
     width: auto;
-    height: auto;
+    height:$alto;
     margin-left: 50px;
     margin-bottom: 100px;
     margin-top: 60px;
   }
   
-
   .card {
     width: 280px;
-    border: 6px solid #bd9052;
+    border: 6px solid $primario;
     border-radius: 5px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 8px #3b380f 0, 0, 0, 0.1;
+    box-shadow: 0 4px 8px $secundario0, 0, 0, 0.1;
     display: inline-block;
     margin: 5px;
     margin-left: 9%;
@@ -255,54 +187,54 @@
     background-color: #efeeed;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    max-width: 100%;
+    max-width: $ancho;
     overflow-x: hidden;
     margin: 0 auto;
   }
   
   .card__img1 {
     height: 180px;
-    width: 100%;
-    background-color: #bd9052;
+    width:$ancho;
+    background-color:$primario;
     background-image: url(../img.html/molde-bb.jpeg);
   }
   
   .card__img2 {
     height: 180px;
-    width: 100%;
-    background-color: #bd9052;
+    width: $ancho;
+    background-color:$primario;
     background-image: url(../img.html/soja.jpeg);
   }
   
   .card__img3 {
     height: 180px;
-    width: 100%;
-    background-color: #bd9052;
+    width: $ancho;
+    background-color:$primario;
     background-image: url(../img.html/vela-card.jpeg);
   }
   
   .card__content {
     padding: 25px;
     overflow: hidden;
-    height: auto;
+    height:$alto;
   }
   
   .card__titulo {
     margin-top: 0;
-    color: #3b380f;
+    color:$secundario;
     text-align: center;
   }
   
   .card__arti {
-    color: #bd9052;
+    color:$primario;
     padding: 15px;
     text-align: justify;
   }
   
   @media only screen and  (max-width: 300px){
     #contenedor-cards{
-       width:auto;
-       height: auto;
+       width:$ancho;
+       height:$alto;
        margin:0 auto;
        align-items: center;
        align-self: center;
@@ -320,17 +252,16 @@
     border: 2px solid rgba(59, 56, 15, 0.7058823529);
     border-radius: 10px;
     color: #fff;
-    background-color: #bd9052;
+    background-color:$primario;
     border-color: rgba(59, 56, 15, 0.7058823529);
-  }
-  
-  .btn-primary:hover {
-    padding: 8px;
-    border: 2px solid rgba(59, 56, 15, 0.7058823529);
-    border-radius: 10px;
-    color: #fff;
-    background-color: rgba(59, 56, 15, 0.7058823529);
-    border-color: #bd9052;
+    &:hover {
+      padding: 8px;
+      border: 2px solid rgba(59, 56, 15, 0.7058823529);
+      border-radius: 10px;
+      color: #fff;
+      background-color: rgba(59, 56, 15, 0.7058823529);
+      border-color: $primario;
+    }
   }
   
   .btn-secondary {
@@ -339,83 +270,37 @@
     border: 2px solid rgba(59, 56, 15, 0.7058823529);
     border-radius: 10px;
     color: #fff;
-    background-color: #bd9052;
+    background-color:$primario;
     border-color: rgba(59, 56, 15, 0.7058823529);
-  }
-  
-  .btn-secondary:hover {
+      
+  &:hover {
     padding: 8px;
     border: 2px solid rgba(59, 56, 15, 0.7058823529);
     border-radius: 10px;
     color: #fff;
     background-color: rgba(59, 56, 15, 0.7058823529);
-    border-color: #bd9052;
+    border-color:$primario;
+  }
   }
 
-  .modal-body .descripcion-producto img{
-   background-color: #bd9052;
+
+  .modal-body {
+  .descripcion-producto{
+     img{
+   background-color:$primario;
    display: flex;
    align-items: center;
    align-content: center;
    justify-content: center;
   }
-  
+ }
+}
   /* fin modal*/
-  /* inicio carousel*/
-  #carouselConteiner{
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: 40px;
-
-  }
-  
-  #carouselExample {
-    width: 100%;
-    margin: 0 auto;
-    padding: 5px;
-    height: auto;
-  }
-  
-  .carousel-item img {
-    max-width: 520px;
-    margin: 0 auto;
-    padding: 30px;
-    height: 600px;
-  }
-  
-  .carousel-item h6 {
-    color: #191809;
-    font-size: 25px;
-    font-family: cursive;
-  }
-  
-  .carousel-item p {
-    color: #191809;
-    font-size: 25px;
-    font-family: cursive;
-  }
-  
-  .carousel-control-prev-icon {
-    background-color: rgba(59, 56, 15, 0.7058823529);
-  }
-  
-  .carousel-control-next-icon {
-    background-color: rgba(59, 56, 15, 0.7058823529);
-  }
-  
-  /* fin carousel*/
-
- 
-
-  
-
  
   /*estilo envios*/
   .titilo-envios h1 {
     padding: 50px 0 5px 0;
-    font-family:"Dosis", sans-serif;
+    font-family:$type;
     font-size: 40px;
   }
   
@@ -432,38 +317,33 @@
   margin-bottom: 80px;
   margin-top: 80px;
   border-radius: 5px;
-  font-family:"Dosis", sans-serif;
+  font-family:$type;
   color: #825d42;
-}
 
 .data {
   margin: 10px 0 40px 0;
+  span {
+    font-size: 20px;
+    margin: 10px 0 10px 0;
+    color:  rgb(22, 22, 20);
+  }
+  a {
+    font-size: 15px;
+    color: rgba(247, 247, 244, 0.576);
+    text-decoration: none;
+   &:hover {
+     color: rgba(247, 247, 244, 0.952);
+     text-decoration: none;
+     text-decoration: underline;
+     }
+  }
 }
-
-.data a {
-  font-size: 15px;
-  color: rgba(247, 247, 244, 0.576);
-  text-decoration: none;
-}
-
-.form-envios a:hover {
-  color: rgba(247, 247, 244, 0.952);
-  text-decoration: none;
-  text-decoration: underline;
-}
-
-.data span {
-  font-size: 20px;
-  margin: 10px 0 10px 0;
-  color:  rgb(22, 22, 20);
-}
-
-.form-envios .botton {
+ .botton {
   display: block;
   align-items: center;
   align-content: center;
   color: #1d1911;
-  background-color:#bd9052;
+  background-color:$primario;
   width: 25%;
   border: none;
   padding: 10px;
@@ -471,17 +351,27 @@
   margin-left: 37%;
   margin-top: 25px;
   border-radius: 2px;
+  &.botton:hover {
+    transform: scale(1.2);
+  }
 }
-
-.form-envios .botton:hover {
-  transform: scale(1.2);
-}
-
-.form-envios h4 {
+h4 {
   margin-bottom: 15px;
   font-size: 40px;
   color: #0e0c03;
   text-align: center;
+}
+
+.control {
+  width: 90%;
+  background: rgba(247, 247, 244, 0.909);
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(200, 156, 125, 0.4784313725);
+  font-family:$type;
+  font-size: 20px;
+  margin-left: 35px;
 }
 
 .iconos-pago {
@@ -492,40 +382,31 @@
   margin-left: 42%;
 }
 
-.control {
-  width: 90%;
-  background: rgba(247, 247, 244, 0.909);
-  padding: 5px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  border: 1px solid rgba(200, 156, 125, 0.4784313725);
-  font-family:"Dosis", sans-serif;
-  font-size: 20px;
-  margin-left: 35px;
-}
-
-.form-envios p {
+ p {
   height: 50px;
   text-align: center;
   font-size: 12px;
-  font-family:"Dosis", sans-serif;
+  font-family:$type;
   color: (247, 247, 244, 0.576);
 }
-.pago span{
+.pago {
+  span{
   color:rgba(247, 247, 244, 0.868);
   font-size:20px ;
   margin:30px;
+}
 }
 
 i{
   color:  rgba(247, 247, 244, 0.832);
   font-size: 25px;
-  transition: all 0,5s
+  transition: all 0,5s;
+  &:hover{
+    transform: scale(1.1);
+  }
 }
-i:hover{
-  transform: scale(1.1);
+
 }
-  
   /*fin estilos  envios*/
   /*estilos nosotros */
   .nosotrosubivideo {
@@ -539,11 +420,11 @@ i:hover{
   
   .nosotrosubivideo > div {
     margin-bottom: 20px;
-    color: #3b380f;
+    color:$secundario;
   }
   
   h5 {
-    color: #3b380f;
+    color:$secundario;
     margin-bottom: 10px;
   }
   
@@ -555,7 +436,8 @@ i:hover{
     border-radius: 8px;
   }
   
-  .nosotros-title h2 {
+  .nosotros-title{
+   h2 {
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -563,18 +445,19 @@ i:hover{
     font-size: 50px;
     margin-top: 30px;
     margin-bottom: 40px;
-  
+  }
   }
   
-  .descripcion-empresa p{
+  .descripcion-empresa {
+  p{
     padding: 30px;
-    color: #3b380f;
+    color:$secundario;
     background-color: rgba(217, 164, 100, 0.452);
     margin: 15px;
     text-align: justify;
     font-size: 20px;
   }
-
+}
   @media  only screen and  (max-width: 468px){  
   .descripcion-empresa p{
     padding: 10px;
@@ -591,14 +474,14 @@ i:hover{
     border-radius: 6px;
     margin-left: 65%;
     margin-bottom: 50px;
-  }
+ 
   
   .container-velas button {
     margin-left: 80px;
   }
   
   .velas {
-    border-radius: solid 1px #3b380f;
+    border-radius: solid 1px $secundario;
     width: 200px;
     height: 200px;
     padding: 10px;
@@ -615,7 +498,7 @@ i:hover{
   }
   
   .contenedor-img {
-    width: 100%;
+    width:$ancho;
     max-height: 1200px;
     display: flex;
     flex-wrap: wrap;
@@ -649,13 +532,14 @@ i:hover{
     font-weight: bold;
     margin: 10px;
   }
+}
   
   /*fin estilos velas*/
   /*estilos moldes */
   .title {
     display: flex;
     justify-content: space-evenly;
-    color: #3b380f;
+    color:$secundario;
     padding: 30px 0 40px 0;
   }
   
@@ -668,31 +552,28 @@ i:hover{
     padding: 10px 0 40px 0;
     border-radius: 6px;
     margin-bottom: 50px;
-  }
   
   .conteiner-items {
     display: grid;
     border-radius: 10px;
     width: 275px;
+    &:hover {
+      box-shadow: 0 10px 250px rgb(0, 0, 12);
+    }
   }
-  
-  .conteiner-items:hover {
-    box-shadow: 0 10px 250px rgb(0, 0, 12);
-  }
-  
-  .item img {
+  .item {
+  img {
     width: 280px;
     height: 300px;
     object-fit: cover;
     border-top: 5px;
     border-radius: 3px;
-    transition: all 0.5s;
-  }
-  
-  .item img:hover {
+    transition: all 0.5s;   
+  &:hover {
     transform: scale(1.1);
-  }
-  
+    }
+   }
+ }
   .infor {
     padding: 15px 20px;
     line-height: 2;
@@ -710,14 +591,14 @@ i:hover{
     border: none;
     background: none;
     background-color: rgba(189, 144, 82, 0.6588235294);
-    color: #3b380f;
+    color:$secundario;
     padding: 5px;
     transition: all 0.5s;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
-  
-  .infor button:hover {
-    transform: scale(1.1);
-  }
+}
   
   /*fin estilos moldes*/
   @media only screen and (max-width: 350px) {
@@ -754,7 +635,7 @@ i:hover{
       margin: auto;
     }
     body {
-      height: auto;
+      height:$altura;
     }
   }
   @media only screen and (max-width: 850px) {
@@ -787,7 +668,7 @@ i:hover{
       margin: auto;
     }
     body {
-      height: auto;
+      height:$altura;
     }
   }
   @media only screen and (max-width: 468px) {
