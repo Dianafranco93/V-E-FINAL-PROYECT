@@ -1,0 +1,113 @@
+/*estilo envios*/
+.titilo-envios{
+    h1 {
+     padding: 50px 0 5px 0;
+     font-family:"Dosis", sans-serif;
+     font-size: 40px;
+   }
+   }
+   
+   .form-envios {
+   align-content: center;
+   display: block;
+   width: 700px;
+   height: 700px;
+   background-image: url(../img/decora.jpeg);
+   padding: 10px;
+   border: 2px;
+   margin: 0 auto;
+   margin-bottom: 80px;
+   margin-top: 80px;
+   border-radius: 5px;
+   font-family:"Dosis", sans-serif;
+   color: #825d42;
+     .botton {
+       display: block;
+       align-items: center;
+       align-content: center;
+       color: #1d1911;
+       background-color:#bd9052;
+       width: 25%;
+       border: none;
+       padding: 10px;
+       margin: auto;
+       margin-left: 37%;
+       margin-top: 25px;
+       border-radius: 4px;
+       &:hover {
+         transform: scale(1.2);
+         }
+       }
+   
+    .data {
+     margin-left: 20px;
+     margin-top: 10px;
+     a{
+     font-size: 15px;
+     color: rgba(247, 247, 244, 0.576);
+     text-decoration: none;
+     &:hover {
+       color: rgba(247, 247, 244, 0.952);
+       text-decoration: none;
+       text-decoration: underline;
+       }
+     }
+     span {
+       font-size: 20px;
+       margin-left: 10px;
+       color:  rgb(22, 22, 20);
+       }
+   }
+     h4 {
+      margin-bottom: 15px;
+      font-size: 40px;
+      color: #0e0c03;
+      text-align: center;
+   }
+   
+   .iconos-pago {
+   display: inline-block;
+   align-items: center;
+   align-content: center;
+   margin-right: auto;
+   margin-left: 42%;
+   }
+   
+   .control {
+   width: 90%;
+   background: rgba(247, 247, 244, 0.909);
+   padding: 5px;
+   border-radius: 5px;
+   margin-bottom: 10px;
+   border: 1px solid rgba(200, 156, 125, 0.4784313725);
+   font-family:"Dosis", sans-serif;
+   font-size: 20px;
+   margin-left: 35px;
+   }
+   
+    p {
+   height: 50px;
+   text-align: center;
+   font-size: 12px;
+   font-family:"Dosis", sans-serif;
+   color: (247, 247, 244, 0.576);
+   }
+   .pago{ 
+     span{
+   color:rgba(247, 247, 244, 0.868);
+   font-size:20px ;
+   margin:30px;
+    }
+   }
+   
+   i{
+   color:  rgba(247, 247, 244, 0.832);
+   font-size: 25px;
+   transition: all 0,5s;
+   &:hover{
+     transform: scale(1.1);
+     }
+   }
+   
+   }
+   /*fin estilos  envios*/

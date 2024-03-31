@@ -1,5 +1,9 @@
 @import'generales';
 @import'variables';
+@import'envios';
+
+
+
 
 /*fin  estilos carrito*/
 /*codigo del subtitulo */
@@ -42,8 +46,6 @@ h2 {
   margin-bottom: 100px;
   margin-top: 60px;
 
-
-
 .card {
   width: 280px;
   border: 6px solid #bd9052;
@@ -73,8 +75,6 @@ h2 {
     background-color: #bd9052;
     background-image: url(../img.html/vela-card.jpeg);
   }
-  
-
 
 .card__content {
   height: 270px;
@@ -98,9 +98,8 @@ h2 {
     color: #bd9052;
     padding: 15px;
     text-align: justify;
+    }
   }
-}
-
 }
 @media only screen and  (max-width: 300px){
   #contenedor-cards{
@@ -132,10 +131,8 @@ button.btn-primary {
   color: #fff;
   background-color: rgba(59, 56, 15, 0.7058823529);
   border-color: #bd9052;
+  }
 }
-
-}
-
 button.btn-secondary {
   padding: 8px;
   background: none;
@@ -213,118 +210,142 @@ button.btn-secondary {
 }
 }
 /* fin carousel*/
+/*inicio estilos velas*/
+.container-velas {
+  width: 1300px;
+  padding: 10px 0 40px 0;
+  border-radius: 6px;
+  margin-left: 65%;
+  margin-bottom: 50px;
 
- 
-/*estilo envios*/
-.titilo-envios{
- h1 {
-  padding: 50px 0 5px 0;
-  font-family:"Dosis", sans-serif;
-  font-size: 40px;
+
 }
+
+.velas {
+  border-radius: solid 1px #3b380f;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 0px 30px 30px;
+  display: inline-block;
+  position: relative;
+  left: 10%;
 }
 
-.form-envios {
-align-content: center;
-display: block;
-width: 700px;
-height: 700px;
-background-image: url(../img/decora.jpeg);
-padding: 10px;
-border: 2px;
-margin: 0 auto;
-margin-bottom: 80px;
-margin-top: 80px;
-border-radius: 5px;
-font-family:"Dosis", sans-serif;
-color: #825d42;
-  .botton {
-    display: block;
-    align-items: center;
-    align-content: center;
-    color: #1d1911;
-    background-color:#bd9052;
-    width: 25%;
-    border: none;
-    padding: 10px;
-    margin: auto;
-    margin-left: 37%;
-    margin-top: 25px;
-    border-radius: 2px;
-    &:hover {
-      transform: scale(1.2);
-      }
-    }
+.icon .container-icon {
+  justify-content: right;
+  margin-left: 95%;
+  padding: 10px;
+}
 
- .data {
-  margin: 10px 0 40px 0;
-  a{
-  font-size: 15px;
-  color: rgba(247, 247, 244, 0.576);
-  text-decoration: none;
+.contenedor-img {
+  width: 100%;
+  max-height: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px 0 50px 0;
+}
+
+.sub-velas {
+  text-align: center;
+  padding: 30px 0 40px 0;
+}
+.imagent {
+ img {
+  width: 200px;
+  height: 220px;
+  border: 3px solid #c89c7d;
+  border-radius: 15px;
+  transform: 0.7s;
+  margin: 35px;
   &:hover {
-    color: rgba(247, 247, 244, 0.952);
-    text-decoration: none;
-    text-decoration: underline;
-    }
+    transform: scale(1.1);
+    border-radius: 3px;
   }
-  span {
-    font-size: 20px;
-    margin: 10px 0 10px 0;
-    color:  rgb(22, 22, 20);
-    }
-}
-  h4 {
-   margin-bottom: 15px;
-   font-size: 40px;
-   color: #0e0c03;
-   text-align: center;
+  p {
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px;
+  }
+ }
 }
 
-.iconos-pago {
-display: inline-block;
-align-items: center;
-align-content: center;
-margin-right: auto;
-margin-left: 42%;
+
+/*fin estilos velas*/
+
+/*estilos moldes */
+.title {
+  display: flex;
+  justify-content: space-evenly;
+  color: #3b380f;
+  padding: 30px 0 40px 0;
 }
 
-.control {
-width: 90%;
-background: rgba(247, 247, 244, 0.909);
-padding: 5px;
-border-radius: 5px;
-margin-bottom: 10px;
-border: 1px solid rgba(200, 156, 125, 0.4784313725);
-font-family:"Dosis", sans-serif;
-font-size: 20px;
-margin-left: 35px;
-}
+.contenedor-catalogo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 90px;
+  gap: 20px;
+  max-width: 1300px;
+  padding: 10px 0 40px 0;
+  border-radius: 6px;
+  margin-bottom: 50px;
 
-.form-envios p {
-height: 50px;
-text-align: center;
-font-size: 12px;
-font-family:"Dosis", sans-serif;
-color: (247, 247, 244, 0.576);
-}
-.pago span{
-color:rgba(247, 247, 244, 0.868);
-font-size:20px ;
-margin:30px;
-}
 
-i{
-color:  rgba(247, 247, 244, 0.832);
-font-size: 25px;
-transition: all 0,5s;
-&:hover{
-  transform: scale(1.1);
+.conteiner-items {
+  display: grid;
+  border-radius: 10px;
+  width: 275px;
+  &:hover {
+    box-shadow: 0 10px 250px rgb(0, 0, 12);
   }
 }
-
+.item img {
+  width: 280px;
+  height: 300px;
+  object-fit: cover;
+  border-top: 5px;
+  border-radius: 3px;
+  transition: all 0.5s;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
-/*fin estilos  envios*/
+.infor {
+  padding: 15px;
+  line-height: 2;
+  display: flex;
+  flex-direction:column;
+  gap: 8px;
+
+  .precio {
+    font-size: 18px;
+    font-weight: 900px;
+  }
+  
+   button {
+    border: none;
+    border-radius: 5px;
+    background: none;
+    background-color: rgba(189, 144, 82, 0.6588235294);
+    color: #3b380f;
+    padding: 4px;
+    width: 70%;
+    height:40px;
+    margin-left: 37px;
+    transition: all 0.7s;
+      &:hover {
+      transform: scale(1.1);
+     }
+    }  
+  }
+}
+/*fin estilos moldes*/
+ 
+
 /*estilos nosotros */
 .nosotrosubivideo {
   display: flex;
@@ -383,137 +404,8 @@ iframe {
 }
 
 /* fin estilos nosotrso*/
-/*inicio estilos velas*/
-.container-velas {
-  width: 1300px;
-  padding: 10px 0 40px 0;
-  border-radius: 6px;
-  margin-left: 65%;
-  margin-bottom: 50px;
-
- button {
-  margin-left: 80px;
-}
-
-}
-
-.velas {
-  border-radius: solid 1px #3b380f;
-  width: 200px;
-  height: 200px;
-  padding: 10px;
-  margin: 0px 30px 30px;
-  display: inline-block;
-  position: relative;
-  left: 10%;
-}
-
-.icon .container-icon {
-  justify-content: right;
-  margin-left: 95%;
-  padding: 10px;
-}
-
-.contenedor-img {
-  width: 100%;
-  max-height: 1200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px 0 50px 0;
-}
-
-.sub-velas {
-  text-align: center;
-  padding: 30px 0 40px 0;
-}
-.imagent {
- img {
-  width: 200px;
-  height: 220px;
-  border: 3px solid #c89c7d;
-  border-radius: 15px;
-  transform: 0.7s;
-  margin: 35px;
-  &:hover {
-    transform: scale(1.1);
-    border-radius: 3px;
-  }
-  p {
-    text-align: center;
-    padding: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    margin: 10px;
-  }
- }
-}
 
 
-/*fin estilos velas*/
-/*estilos moldes */
-.title {
-  display: flex;
-  justify-content: space-evenly;
-  color: #3b380f;
-  padding: 30px 0 40px 0;
-}
-
-.contenedor-catalogo {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-left: 90px;
-  gap: 20px;
-  max-width: 1300px;
-  padding: 10px 0 40px 0;
-  border-radius: 6px;
-  margin-bottom: 50px;
-
-
-.conteiner-items {
-  display: grid;
-  border-radius: 10px;
-  width: 275px;
-  &:hover {
-    box-shadow: 0 10px 250px rgb(0, 0, 12);
-  }
-}
-.item img {
-  width: 280px;
-  height: 300px;
-  object-fit: cover;
-  border-top: 5px;
-  border-radius: 3px;
-  transition: all 0.5s;
-  &:hover {
-    transform: scale(1.1);
-  }
-}
-.infor {
-  padding: 15px 20px;
-  line-height: 2;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  .precio {
-    font-size: 18px;
-    font-weight: 900px;
-  }
-  
-   button {
-    border: none;
-    background: none;
-    background-color: rgba(189, 144, 82, 0.6588235294);
-    color: #3b380f;
-    padding: 5px;
-    transition: all 0.5s;
-      &:hover {
-      transform: scale(1.1);
-     }
-    }  
-  }
-}
-/*fin estilos moldes*/
 @media only screen and (max-width: 350px) {
   .logo-velas {
    

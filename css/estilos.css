@@ -43,24 +43,24 @@ footer {
   position: relative;
   bottom: 0;
   left: 0;
-  padding: 2rem 8%;
+  padding: 25px;
   background-color: #bd9052;
   display: flex;
   justify-content: space-between;
-  gap: 5px;
+  gap: 1px;
   align-items: center;
 }
 footer .contenedor-redes {
-  width: 300px;
+  width: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10px;
+  margin: 0px;
 }
 footer .contenedor-redes .tutulo-redes h5 {
   text-align: center;
-  font-size: 20px;
+  font-size: 15px;
   margin: 0 auto;
 }
 footer .contenedor-redes .redes {
@@ -69,7 +69,7 @@ footer .contenedor-redes .redes {
   align-content: center;
   height: auto;
   width: auto;
-  margin-left: 15px;
+  margin-left: 5px;
   margin-top: 10px;
   margin-bottom: 5px;
   color: #423f16;
@@ -78,7 +78,13 @@ footer .contenedor-redes .redes {
 footer .contenedor-redes .redes i {
   text-decoration: none;
   color: #3b380f;
-  margin: 10px;
+  margin: 5px;
+}
+footer .contenedor-redes .redes i:hover {
+  color: rgba(107, 102, 41, 0.8117647059);
+  transition: 0, 5;
+  color: rgba(247, 247, 244, 0.576);
+  transform: scale(1.2);
 }
 footer .menu-footer {
   display: flex;
@@ -86,11 +92,11 @@ footer .menu-footer {
   align-content: center;
   list-style-type: none;
   color: #3b380f;
-  font-size: 15px;
+  font-size: 10px;
   text-decoration: none;
 }
 footer .menu-footer .menu-item {
-  margin: 1rem 1.5rem;
+  margin: 4px;
   cursor: all-scroll;
   opacity: 0.7;
 }
@@ -108,8 +114,10 @@ footer .copyright {
   margin-top: 10px;
 }
 footer .logo-footer {
-  width: 230px;
+  width: 200px;
   height: 190px;
+  margin: 5px;
+  margin-left: 10px;
 }
 footer .menu-item a {
   font-size: 15px;
@@ -119,6 +127,7 @@ footer .menu-item a {
 footer .menu-item a ul {
   list-style-type: none;
   padding: 0;
+  margin-left: 10px;
 }
 
 /*titulo principal*/
@@ -173,7 +182,7 @@ h1 {
 
 .count-productos {
   position: absolute;
-  top: 160px;
+  top: 240px;
   right: 3px;
   background-color: #2c2b1f;
   color: #9a7153;
@@ -212,6 +221,110 @@ h1 {
   background-color: rgba(59, 56, 15, 0.7882352941);
 }
 
+/*estilo envios*/
+.titilo-envios h1 {
+  padding: 50px 0 5px 0;
+  font-family: "Dosis", sans-serif;
+  font-size: 40px;
+}
+
+.form-envios {
+  align-content: center;
+  display: block;
+  width: 700px;
+  height: 700px;
+  background-image: url(../img/decora.jpeg);
+  padding: 10px;
+  border: 2px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  border-radius: 5px;
+  font-family: "Dosis", sans-serif;
+  color: #825d42;
+}
+.form-envios .botton {
+  display: block;
+  align-items: center;
+  align-content: center;
+  color: #1d1911;
+  background-color: #bd9052;
+  width: 25%;
+  border: none;
+  padding: 10px;
+  margin: auto;
+  margin-left: 37%;
+  margin-top: 25px;
+  border-radius: 4px;
+}
+.form-envios .botton:hover {
+  transform: scale(1.2);
+}
+.form-envios .data {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.form-envios .data a {
+  font-size: 15px;
+  color: rgba(247, 247, 244, 0.576);
+  text-decoration: none;
+}
+.form-envios .data a:hover {
+  color: rgba(247, 247, 244, 0.952);
+  text-decoration: none;
+  text-decoration: underline;
+}
+.form-envios .data span {
+  font-size: 20px;
+  margin-left: 10px;
+  color: rgb(22, 22, 20);
+}
+.form-envios h4 {
+  margin-bottom: 15px;
+  font-size: 40px;
+  color: #0e0c03;
+  text-align: center;
+}
+.form-envios .iconos-pago {
+  display: inline-block;
+  align-items: center;
+  align-content: center;
+  margin-right: auto;
+  margin-left: 42%;
+}
+.form-envios .control {
+  width: 90%;
+  background: rgba(247, 247, 244, 0.909);
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(200, 156, 125, 0.4784313725);
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  margin-left: 35px;
+}
+.form-envios p {
+  height: 50px;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Dosis", sans-serif;
+  color: 247, 247, 244, 0.576;
+}
+.form-envios .pago span {
+  color: rgba(247, 247, 244, 0.868);
+  font-size: 20px;
+  margin: 30px;
+}
+.form-envios i {
+  color: rgba(247, 247, 244, 0.832);
+  font-size: 25px;
+  transition: all 0, 5s;
+}
+.form-envios i:hover {
+  transform: scale(1.1);
+}
+
+/*fin estilos  envios*/
 /*fin  estilos carrito*/
 /*codigo del subtitulo */
 h2 {
@@ -398,164 +511,6 @@ h2 {
 }
 
 /* fin carousel*/
-/*estilo envios*/
-.titilo-envios h1 {
-  padding: 50px 0 5px 0;
-  font-family: "Dosis", sans-serif;
-  font-size: 40px;
-}
-
-.form-envios {
-  align-content: center;
-  display: block;
-  width: 700px;
-  height: 700px;
-  background-image: url(../img/decora.jpeg);
-  padding: 10px;
-  border: 2px;
-  margin: 0 auto;
-  margin-bottom: 80px;
-  margin-top: 80px;
-  border-radius: 5px;
-  font-family: "Dosis", sans-serif;
-  color: #825d42;
-}
-.form-envios .botton {
-  display: block;
-  align-items: center;
-  align-content: center;
-  color: #1d1911;
-  background-color: #bd9052;
-  width: 25%;
-  border: none;
-  padding: 10px;
-  margin: auto;
-  margin-left: 37%;
-  margin-top: 25px;
-  border-radius: 2px;
-}
-.form-envios .botton:hover {
-  transform: scale(1.2);
-}
-.form-envios .data {
-  margin: 10px 0 40px 0;
-}
-.form-envios .data a {
-  font-size: 15px;
-  color: rgba(247, 247, 244, 0.576);
-  text-decoration: none;
-}
-.form-envios .data a:hover {
-  color: rgba(247, 247, 244, 0.952);
-  text-decoration: none;
-  text-decoration: underline;
-}
-.form-envios .data span {
-  font-size: 20px;
-  margin: 10px 0 10px 0;
-  color: rgb(22, 22, 20);
-}
-.form-envios h4 {
-  margin-bottom: 15px;
-  font-size: 40px;
-  color: #0e0c03;
-  text-align: center;
-}
-.form-envios .iconos-pago {
-  display: inline-block;
-  align-items: center;
-  align-content: center;
-  margin-right: auto;
-  margin-left: 42%;
-}
-.form-envios .control {
-  width: 90%;
-  background: rgba(247, 247, 244, 0.909);
-  padding: 5px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  border: 1px solid rgba(200, 156, 125, 0.4784313725);
-  font-family: "Dosis", sans-serif;
-  font-size: 20px;
-  margin-left: 35px;
-}
-.form-envios .form-envios p {
-  height: 50px;
-  text-align: center;
-  font-size: 12px;
-  font-family: "Dosis", sans-serif;
-  color: 247, 247, 244, 0.576;
-}
-.form-envios .pago span {
-  color: rgba(247, 247, 244, 0.868);
-  font-size: 20px;
-  margin: 30px;
-}
-.form-envios i {
-  color: rgba(247, 247, 244, 0.832);
-  font-size: 25px;
-  transition: all 0, 5s;
-}
-.form-envios i:hover {
-  transform: scale(1.1);
-}
-
-/*fin estilos  envios*/
-/*estilos nosotros */
-.nosotrosubivideo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-}
-
-.nosotrosubivideo > div {
-  margin-bottom: 20px;
-  color: #3b380f;
-}
-
-h5 {
-  color: #3b380f;
-  margin-bottom: 10px;
-}
-
-iframe {
-  width: 200%;
-  max-width: 100%;
-  height: 200px;
-  border: 2px solid #c89c7d;
-  border-radius: 8px;
-}
-
-.nosotros-title h2 {
-  padding: 5px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 50px;
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-.descripcion-empresa p {
-  padding: 30px;
-  color: #3b380f;
-  background-color: rgba(217, 164, 100, 0.452);
-  margin: 15px;
-  text-align: justify;
-  font-size: 20px;
-}
-
-@media only screen and (max-width: 468px) {
-  .descripcion-empresa p {
-    padding: 10px;
-    font-size: 10px;
-    margin: 0 auto;
-  }
-}
-/* fin estilos nosotrso*/
 /*inicio estilos velas*/
 .container-velas {
   width: 1300px;
@@ -563,9 +518,6 @@ iframe {
   border-radius: 6px;
   margin-left: 65%;
   margin-bottom: 50px;
-}
-.container-velas button {
-  margin-left: 80px;
 }
 
 .velas {
@@ -658,7 +610,7 @@ iframe {
   transform: scale(1.1);
 }
 .contenedor-catalogo .infor {
-  padding: 15px 20px;
+  padding: 15px;
   line-height: 2;
   display: flex;
   flex-direction: column;
@@ -670,17 +622,76 @@ iframe {
 }
 .contenedor-catalogo .infor button {
   border: none;
+  border-radius: 5px;
   background: none;
   background-color: rgba(189, 144, 82, 0.6588235294);
   color: #3b380f;
-  padding: 5px;
-  transition: all 0.5s;
+  padding: 4px;
+  width: 70%;
+  height: 40px;
+  margin-left: 37px;
+  transition: all 0.7s;
 }
 .contenedor-catalogo .infor button:hover {
   transform: scale(1.1);
 }
 
 /*fin estilos moldes*/
+/*estilos nosotros */
+.nosotrosubivideo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.nosotrosubivideo > div {
+  margin-bottom: 20px;
+  color: #3b380f;
+}
+
+h5 {
+  color: #3b380f;
+  margin-bottom: 10px;
+}
+
+iframe {
+  width: 200%;
+  max-width: 100%;
+  height: 200px;
+  border: 2px solid #c89c7d;
+  border-radius: 8px;
+}
+
+.nosotros-title h2 {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.descripcion-empresa p {
+  padding: 30px;
+  color: #3b380f;
+  background-color: rgba(217, 164, 100, 0.452);
+  margin: 15px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 468px) {
+  .descripcion-empresa p {
+    padding: 10px;
+    font-size: 10px;
+    margin: 0 auto;
+  }
+}
+/* fin estilos nosotrso*/
 @media only screen and (max-width: 350px) {
   .logo-velas {
     width: 60px;
